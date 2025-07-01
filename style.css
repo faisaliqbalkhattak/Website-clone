@@ -1,3 +1,7 @@
+/* all padding and margins set to zero and the box sizing is 
+birder box means width and height is inclusive of the padding and borders
+ */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -5,11 +9,19 @@
     outline: none;
 }
 
-.hero::before{
-     background-color: #3b5096;
+/* transfrom al the links to white and remove the underline */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* add a bluish layer on the hero picture */
+.hero::before {
+    background-color: #3b5096;
+
     position: absolute;
     content: '';
-    height: 850%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -17,63 +29,62 @@
 }
 
 .hero {
+    position: absolute;
     background-image: url("images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
     width: 100%;
-   
+
 }
 
 
 .nav-bar {
+    position: relative;
     display: flex;
-   align-content: center;
-
+    align-content: center;
+    top: 0px;
+    left: 0px;
     height: 70px;
-    max-width: 1600px;
     width: 90%;
     margin-left: 64px;
     margin-right: 64px;
     border-radius: 6px;
 }
 
-.logo img{
+.logo img {
     width: 100px;
     z-index: 100;
     height: 100%;
     /* background-size:cover;
     background-repeat: no-repeat;
     z-index: 2; */
-    
+
 }
 
 .nav-items {
-    margin-left: 250px;
+    position: relative;
+    right: 0px;
+
     height: 70px;
- display: flex;
- align-items: center;
-justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
     width: 819px;
-   z-index: 1000;
+    z-index: 1000;
 
-   
+
 }
 
-.nav-items li{
+.nav-items li {
     list-style: none;
-    
-    
+
+
 }
 
 
-.nav-items a{
-    text-decoration: none;
-    color: white;
+.nav-items a {
     font-weight: 700;
     text-transform: uppercase;
-
-  
-
 }
