@@ -17,7 +17,7 @@ a {
 
 /* add a bluish layer on the hero picture */
 .hero::before {
-    background-color: #3b5096;
+    background-color: #143162;
 
     position: absolute;
     content: '';
@@ -31,8 +31,9 @@ a {
 .hero {
     position: absolute;
     background-image: url("images/hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+ background-size:cover;
+ background-repeat: no-repeat;
+ scale: 1;
     height: 850px;
     width: 100%;
 
