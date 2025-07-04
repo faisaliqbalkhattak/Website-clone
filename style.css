@@ -56,7 +56,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     scale: 1;
-    height: 850px;
+    height: 100%;
     width: 100%;
 
 }
@@ -114,15 +114,15 @@ h1 {
 .banner {
 
     /* margins from each side */
-    margin-top: 113px;
-    margin-bottom: 113px;
-    margin-left: 159px;
-    margin-right: 159px;
+    margin-top: 70px;
+    margin-bottom: 122px;
+    margin-left: 75px;
+    margin-right: 94px;
 
     /* text color */
     color: #fff;
     /* other text properties */
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
 
     /* position and display */
@@ -130,43 +130,49 @@ h1 {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 
 }
 
 .banner-logo {
     background-image: url('images/kali-dragon-icon.svg');
-    background-position: 100% 30px;
+   
     background-repeat: no-repeat;
     filter: drop-shadow(20px 20px 20px #153f86);
-    width: 500px;
-    height: 503px;
-    left: 0px;
+    width: 470px;
+    height: 470px;
     display: block;
 }
 
 .banner-text {
     padding: 10px;
-    margin: 0 60px;
+    
+    margin: 50px 100px 0 0;
+    
     text-shadow: 0 0 20px #000;
-    width: 600px;
+    width: 500px;
     display: block;
+    color: #fff;
 }
 
 .banner-text h1 {
-    color: #fff;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.2;
     text-shadow: 0 2px 20px rgba(0, 0, 0, .2);
     margin-bottom: 23px;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 35px;;
 }
 
 .banner-text p {
-    color: #fff;
-    line-height: 1.8;
+
+    line-height: 1.6;
+    
     opacity: 1;
+    font-size: 19px;
+    font-weight:lighter;
+
 
 }
 
@@ -183,8 +189,9 @@ h1 {
     margin-right: .75em;
     color: #fea44c !important;
     background: 0 0;
-    box-shadow: inset 0 0 0 .15em #fea44c,
-        0 2px 2-px #563719;
+
+
+    box-shadow: inset 0 0 0 .15em #FEA44C, 0 2px 20px #563719;
     text-shadow: 0 2px 5px #563719;
 }
 
@@ -213,6 +220,17 @@ h1 {
     border: 0;
     text-align: center;
     z-index: 500;
+
+    background: #367bf0;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(54, 123, 240);
 }
 
 
