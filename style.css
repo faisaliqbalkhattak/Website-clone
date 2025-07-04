@@ -15,6 +15,27 @@ a {
     color: white;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
 /* add a bluish layer on the hero picture */
 .hero::before {
     background-color: #143162;
@@ -108,5 +129,116 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    margin: auto;
+    align-items: center;
+
 }
+
+.banner-logo {
+    background-image: url('images/kali-dragon-icon.svg');
+    background-position: 100% 30px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(20px 20px 20px #153f86);
+    width: 500px;
+    height: 503px;
+    left: 0px;
+    display: block;
+}
+
+.banner-text {
+    padding: 80px;
+    margin: 0 60px;
+    text-shadow: 0 0 20px #000;
+    width: 600px;
+    display: block;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.4;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+    margin-bottom: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.banner-text p {
+    color: #fff;
+    line-height: 1.8;
+    opacity: 1;
+
+}
+
+.banner-text>div:last-child {
+    margin: 30px 0;
+}
+
+.banner-text #download-button {
+
+
+    margin-right: .75em;
+    color: #fea44c !important;
+    background: 0 0;
+    box-shadow: inset 0 0 0 .15em #fea44c,
+        0 2px 2-px #563719;
+    text-shadow: 0 2px 5px #563719;
+}
+
+
+.banner-text #documentation-link {
+
+    margin-left: .75em;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+    box-shadow: inset 0 -.43em rgba(0, 0, 0, .2), 0 2px 20px #1b51ad;
+}
+
+.banner-text .btn {
+    width: 180px;
+    white-space: nowrap;
+    padding: 1.29em .71em;
+    transition: box-shadow .4s, transform .2s, background .4s, color .4s;
+    border-radius: .43em;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px 44px;
+    font-weight: 700;
+    border: 0;
+    text-align: center;
+}
+
+
+.banner-text .btn i {
+    margin: 0 5px;
+    text-shadow: .5px .5px .25px, -.5px -.5px .25px, .5px -.5px .25px,
+        -.5px .5px .25px, 0 4px 3px rgba(0, 0, 0, .5);
+}
+
+
+/* animation of the bounce button */
+
+bounce animation {
+    transform: translateY(-6.24958px) scaleY(0.837504);
+}
+#down-arrow {
+    position: absolute;
+    bottom: 70px;
+    right: 50%;
+    animation: bounce 1s cubic-bezier(.5,.05,1,.5) infinite alternate;
+    transform-origin: right bottom;
+}
+
+
+#down-arrow div {
+    display: block;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    margin: 0 0 3px 10px;
+}
+
