@@ -31,9 +31,9 @@ a {
 .hero {
     position: absolute;
     background-image: url("images/hero.jpg");
- background-size:cover;
- background-repeat: no-repeat;
- scale: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scale: 1;
     height: 850px;
     width: 100%;
 
@@ -53,7 +53,7 @@ a {
     border-radius: 6px;
 }
 
-.logo img {
+.nav-logo img {
     width: 100px;
     z-index: 100;
     height: 100%;
@@ -83,7 +83,30 @@ a {
 
 
 .nav-items a {
-    font-weight:550;
+    font-weight: 550;
     text-transform: uppercase;
     font-size: 15px;
+}
+
+
+.banner {
+
+    /* margins from each side */
+    margin-top: 113px;
+    margin-bottom: 113px;
+    margin-left: 159px;
+    margin-right: 159px;
+
+    /* text color */
+    color: #fff;
+    /* other text properties */
+    font-size: 16px;
+    line-height: 1.5;
+
+    /* position and display */
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
