@@ -7,6 +7,7 @@ birder box means width and height is inclusive of the padding and borders
     margin: 0px;
     box-sizing: border-box;
     outline: none;
+    font-family: var(--font-family), Cantarell, sans-serif;
 }
 
 /* transfrom al the links to white and remove the underline */
@@ -145,7 +146,7 @@ h1 {
 }
 
 .banner-text {
-    padding: 80px;
+    padding: 10px;
     margin: 0 60px;
     text-shadow: 0 0 20px #000;
     width: 600px;
@@ -171,7 +172,10 @@ h1 {
 
 .banner-text>div:last-child {
     margin: 30px 0;
+    display: flex;
 }
+
+
 
 .banner-text #download-button {
 
@@ -196,7 +200,7 @@ h1 {
     width: 180px;
     white-space: nowrap;
     padding: 1.29em .71em;
-    transition: box-shadow .4s, transform .2s, background .4s, color .4s;
+
     border-radius: .43em;
 }
 
@@ -208,6 +212,7 @@ h1 {
     font-weight: 700;
     border: 0;
     text-align: center;
+    z-index: 500;
 }
 
 
@@ -223,11 +228,12 @@ h1 {
 bounce animation {
     transform: translateY(-6.24958px) scaleY(0.837504);
 }
+
 #down-arrow {
     position: absolute;
     bottom: 70px;
     right: 50%;
-    animation: bounce 1s cubic-bezier(.5,.05,1,.5) infinite alternate;
+    animation: bounce 1s cubic-bezier(.5, .05, 1, .5) infinite alternate;
     transform-origin: right bottom;
 }
 
@@ -241,4 +247,3 @@ bounce animation {
     border-bottom: 3px solid #fff;
     margin: 0 0 3px 10px;
 }
-
