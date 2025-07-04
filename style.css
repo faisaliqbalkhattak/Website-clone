@@ -241,12 +241,6 @@ h1 {
 }
 
 
-/* animation of the bounce button */
-
-bounce animation {
-    transform: translateY(-6.24958px) scaleY(0.837504);
-}
-
 #down-arrow {
     position: absolute;
     bottom: 70px;
@@ -255,13 +249,25 @@ bounce animation {
     transform-origin: right bottom;
 }
 
-
 #down-arrow div {
     display: block;
     width: 15px;
     height: 15px;
+    /* this actually creates the arrow */
     transform: rotate(45deg);
     border-right: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    margin: 0 0 3px 10px;
+    margin: 0 0 3px 10px; 
 }
+
+
+/* Bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0) scaleY(1);
+    }
+    100% {
+        transform: translateY(-6.25px) scaleY(0.84);
+    }
+}
+
