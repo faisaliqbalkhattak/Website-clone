@@ -7,7 +7,11 @@ birder box means width and height is inclusive of the padding and borders
     margin: 0px;
     box-sizing: border-box;
     outline: none;
-    font-family: var(--font-family), Cantarell, sans-serif;
+    font-family: sans-serif;
+}
+
+body {
+    line-height: 1.5;
 }
 
 /* transfrom al the links to white and remove the underline */
@@ -52,6 +56,7 @@ h1 {
 
 .hero {
     position: absolute;
+    top: 0;
     background-image: url("images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -136,7 +141,7 @@ h1 {
 
 .banner-logo {
     background-image: url('images/kali-dragon-icon.svg');
-   
+
     background-repeat: no-repeat;
     filter: drop-shadow(20px 20px 20px #153f86);
     width: 470px;
@@ -146,11 +151,11 @@ h1 {
 
 .banner-text {
     padding: 10px;
-    
+
     margin: 50px 100px 0 0;
-    
+
     text-shadow: 0 0 20px #000;
-    width: 500px;
+    width: 550px;
     display: block;
     color: #fff;
 }
@@ -159,10 +164,10 @@ h1 {
     font-weight: 400;
     line-height: 1.2;
     text-shadow: 0 2px 20px rgba(0, 0, 0, .2);
-    margin-bottom: 23px;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 35px;;
+    font-size: 35px;
+    
 }
 
 .banner-text p {
@@ -171,7 +176,7 @@ h1 {
     
     opacity: 1;
     font-size: 19px;
-    font-weight:lighter;
+    font-weight: lighter;
 
 
 }
@@ -243,7 +248,7 @@ h1 {
 
 #down-arrow {
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     right: 50%;
     animation: bounce 1s cubic-bezier(.5, .05, 1, .5) infinite alternate;
     transform-origin: right bottom;
@@ -257,7 +262,7 @@ h1 {
     transform: rotate(45deg);
     border-right: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    margin: 0 0 3px 10px; 
+    margin: 0 0 3px 10px;
 }
 
 /* Bounce animation */
@@ -265,8 +270,52 @@ h1 {
     0% {
         transform: translateY(0) scaleY(1);
     }
+
     100% {
         transform: translateY(-6.25px) scaleY(0.84);
     }
 }
 
+
+
+/* KALI HIGH LIGHTS
+ */
+
+
+
+#kali-highlights {
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 200%;
+    padding-top: 120px;
+    padding-bottom: 120PX;
+    
+}
+
+#kali-highlights>div {
+    text-align: center;
+}
+
+#kali-highlights h1 {
+    font-size: 45px;
+    font-weight: 700;
+
+    background-image: linear-gradient(159deg, rgb(12, 12, 243), rgb(216, 35, 216));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+#kali-highlights h3 {
+ max-width: 700px;
+    font-weight: 400;
+font-size: 26px;
+text-align: center;
+margin: 0 auto;
+}
