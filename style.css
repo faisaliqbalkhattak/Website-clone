@@ -17,7 +17,7 @@ body {
 /* transfrom al the links to white and remove the underline */
 a {
     text-decoration: none;
-    color: white;
+    
 }
 
 p {
@@ -66,7 +66,9 @@ h1 {
 
 }
 
-
+.nav-bar a{
+    color: white;
+}
 .nav-bar {
     position: relative;
     display: flex;
@@ -289,7 +291,7 @@ h1 {
     position: absolute;
     top: 100%;
     width: 100%;
-    height: 200%;
+    height: 250%;
     padding-top: 120px;
     padding-bottom: 120PX;
     
@@ -318,4 +320,45 @@ h1 {
 font-size: 26px;
 text-align: center;
 margin: 0 auto;
+}
+
+ul{
+    list-style-type: none; 
+    font-size: 15px;
+}
+
+#kali-highlights ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1110px;
+    margin: auto;
+
+
+}
+
+
+
+
+#kali-highlights li{
+    width: 370px;
+    line-height: 1.8;
+    padding: 20px 20px 0;
+    text-align: justify;
+    position: relative;
+}
+
+#kali-highlights a>h4{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 0;
+
+}
+
+#kali-highlights p{
+    color:#eeeeec;
+    font-size: 15px;
+
 }
