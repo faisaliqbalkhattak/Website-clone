@@ -362,3 +362,34 @@ ul{
     font-size: 15px;
 
 }
+
+
+
+#kali-highlights figure{
+    position: relative;
+    max-width: 1340px;
+    margin: 60px auto 100px;
+    width: 90%;
+}
+
+img{
+    vertical-align: middle;
+    border: 0;
+    overflow-clip-margin: content-box ;
+    overflow: clip;
+}
+
+#kali-highlights figure img:first-child{
+    width: 107%;
+    margin-top: -2.5%;
+    margin-left: -3.5%;
+    height: auto;
+}
+
+#kali-highlights figure img:last-child{
+    position: absolute;
+    width: 84%;
+    left: 8%;
+    border-radius: 4px;
+   top: 2%;
+}
