@@ -17,7 +17,7 @@ body {
 /* transfrom al the links to white and remove the underline */
 a {
     text-decoration: none;
-    
+
 }
 
 p {
@@ -66,9 +66,10 @@ h1 {
 
 }
 
-.nav-bar a{
+.nav-bar a {
     color: white;
 }
+
 .nav-bar {
     position: relative;
     display: flex;
@@ -169,13 +170,13 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 35px;
-    
+
 }
 
 .banner-text p {
 
     line-height: 1.6;
-    
+
     opacity: 1;
     font-size: 19px;
     font-weight: lighter;
@@ -249,7 +250,7 @@ h1 {
 
 
 #down-arrow {
-    
+
     position: absolute;
     bottom: 50px;
     right: 50%;
@@ -258,7 +259,7 @@ h1 {
 }
 
 #down-arrow div {
-    
+
     display: block;
     width: 15px;
     height: 15px;
@@ -296,7 +297,7 @@ h1 {
     height: 270%;
     padding-top: 120px;
     padding-bottom: 120PX;
-    
+
 }
 
 #kali-highlights>div {
@@ -317,19 +318,19 @@ h1 {
 
 
 #kali-highlights h3 {
- max-width: 700px;
+    max-width: 700px;
     font-weight: 400;
-font-size: 26px;
-text-align: center;
-margin: 0 auto;
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-ul{
-    list-style-type: none; 
+ul {
+    list-style-type: none;
     font-size: 15px;
 }
 
-#kali-highlights ul{
+#kali-highlights ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -342,7 +343,7 @@ ul{
 
 
 
-#kali-highlights li{
+#kali-highlights li {
     width: 370px;
     line-height: 1.8;
     padding: 20px 20px 0;
@@ -350,7 +351,7 @@ ul{
     position: relative;
 }
 
-#kali-highlights a>h4{
+#kali-highlights a>h4 {
     color: #ffffff;
     font-weight: 400;
     font-size: 20px;
@@ -359,61 +360,168 @@ ul{
 
 }
 
-#kali-highlights p{
-    color:#eeeeec;
+#kali-highlights p {
+    color: #eeeeec;
     font-size: 15px;
 
 }
 
 
 
-#kali-highlights figure{
+#kali-highlights figure {
     position: relative;
     max-width: 1340px;
     margin: 60px auto 100px;
     width: 90%;
 }
 
-img{
+img {
     vertical-align: middle;
     border: 0;
-    overflow-clip-margin: content-box ;
+    overflow-clip-margin: content-box;
     overflow: clip;
 }
 
-#kali-highlights figure img:first-child{
+#kali-highlights figure img:first-child {
     width: 107%;
     margin-top: -2.5%;
     margin-left: -3.5%;
     height: auto;
 }
 
-#kali-highlights figure img:last-child{
+#kali-highlights figure img:last-child {
     position: absolute;
     width: 84%;
     left: 8%;
     border-radius: 4px;
-   top: 2%;
+    top: 2%;
 }
 
 
 /* section two for the kali tools start here  */
 
 
-#kali-tools{
- position: absolute;
- top: 370%;
-   
+#kali-tools {
+    position: absolute;
+    top: 370%;
+    width: 100%;
 }
 
-.tools-link::after{
+.tools-link::after {
     content: '>';
-     display: inline-block;
+    display: inline-block;
     margin-left: .2em;
-    transition: transform .15s linear;
-    will-change: transform;
+
 }
 
-   
-    
-    
+
+.white-section {
+
+    background-color: #16171d;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+section h2 {
+    font-size: 32px;
+    font-weight: 400;
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: normal;
+    color: #fff;
+}
+
+section>p {
+    font-size: 19px;
+    line-height: 1.8;
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #eeeeec;
+
+}
+
+#kali-tools h4 {
+    font-weight: 700;
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    text-align: center;
+    line-height: normal;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#kali-tools>div {
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+#kali-tools>div::before {
+    left: 0;
+    background-image: linear-gradient(to right, #16171d, rgba(255, 255, 255, 0));
+}
+
+#kali-tools>div::before,
+#kali-tools>div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    top: 0;
+    z-index: 1;
+}
+
+#kali-tools>div::before {
+    left: 0;
+    background-image: linear-gradient(to left, #16171d, rgba(255, 255, 255, 0));
+}
+
+#carousel {
+    overflow: auto;
+    padding: 20px 0;
+    scrollbar-width: none;
+    user-select: none;
+}
+
+#carousel>div {
+    transition: transform 1s ease;
+    display: flex;
+    will-change: trasform;
+}
+
+
+#kali-tools>div a {
+    flex-shrink: 0;
+    width: 17vw;
+    max-width: 180px;
+    min-width: 80px;
+    font-size: 16px;
+    color: inherit !important;
+}
+
+
+#kali-tools>div a>img {
+    height: 67%;
+    width: 67%;
+    transition: .4s transform ease;
+    margin-bottom: 15px;
+    transform-origin: bottom center;
+}
+
+#kali-tools div {
+    color: #eeeeec;
+}
