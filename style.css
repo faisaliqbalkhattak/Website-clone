@@ -332,6 +332,7 @@ ul {
 
 #kali-highlights ul {
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1110px;
@@ -409,11 +410,11 @@ img {
 
 .tools-link::after {
     content: '>';
+    will-change: transform;
     display: inline-block;
     margin-left: .2em;
 
 }
-
 
 .white-section {
 
@@ -471,7 +472,7 @@ section>p {
 
 #kali-tools>div::before {
     left: 0;
-    background-image: linear-gradient(to right, #16171d, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, #16171d, rgba(218, 77, 77, 0));
 }
 
 #kali-tools>div::before,
@@ -485,24 +486,71 @@ section>p {
     z-index: 1;
 }
 
-#kali-tools>div::before {
-    left: 0;
-    background-image: linear-gradient(to left, #16171d, rgba(255, 255, 255, 0));
+#kali-tools>div::after {
+    right: 0;
+    background-image: linear-gradient(to left, #16171d, rgba(199, 29, 29, 0));
 }
 
 #carousel {
-    overflow: auto;
+    overflow: hidden;
     padding: 20px 0;
     scrollbar-width: none;
     user-select: none;
+    width: 100%;
+    position: relative;
 }
 
 #carousel>div {
-    transition: transform 1s ease;
     display: flex;
-    will-change: trasform;
+    animation: scroll-left 50s ease infinite;
+    will-change: transform;
+    width: max-content; /* Make container as wide as all items */
 }
 
+/* Keyframes for continuous left scroll */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(-3%); 
+    }
+    10% {
+        transform: translateX(-4%); 
+    }15% {
+        transform: translateX(-6%); 
+    }20%{
+        transform: translateX(-8%); 
+    }25% {
+        transform: translateX(-10%); 
+    }30% {
+        transform: translateX(-12%); 
+    }35% {
+        transform: translateX(-14%); 
+    }40% {
+        transform: translateX(-16%); 
+    }45% {
+        transform: translateX(-18%); 
+    }50% {
+        transform: translateX(-20%); 
+    }55% {
+        transform: translateX(-22%); 
+    }60% {
+        transform: translateX(-24%); 
+    }70% {
+        transform: translateX(-26%); 
+    }75% {
+        transform: translateX(-28%); 
+    }80% {
+        transform: translateX(-30%); 
+    }85% {
+        transform: translateX(-32%); 
+    }90% {
+        transform: translateX(-34%); 
+    }100% {
+        transform: translateX(-36%); 
+    }
+}
 
 #kali-tools>div a {
     flex-shrink: 0;
@@ -511,15 +559,22 @@ section>p {
     min-width: 80px;
     font-size: 16px;
     color: inherit !important;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 10px;
 }
-
 
 #kali-tools>div a>img {
     height: 67%;
     width: 67%;
-    transition: .4s transform ease;
     margin-bottom: 15px;
-    transform-origin: bottom center;
+    transform-origin:bottom center;
+    transition: transform 0.5s ease; 
+}
+
+#kali-tools>div a>img:hover {
+    transform: scale(1.2);
+  
 }
 
 #kali-tools div {
