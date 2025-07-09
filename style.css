@@ -404,6 +404,7 @@ img {
 
 #kali-tools {
     position: absolute;
+    background-color: #16171d;
     top: 370%;
     width: 100%;
 }
@@ -418,7 +419,6 @@ img {
 
 .white-section {
 
-    background-color: #16171d;
 }
 
 section {
