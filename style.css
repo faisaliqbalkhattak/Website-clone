@@ -8,6 +8,7 @@ birder box means width and height is inclusive of the padding and borders
     box-sizing: border-box;
     outline: none;
     font-family: sans-serif;
+    position: relative;
 }
 
 body {
@@ -55,13 +56,13 @@ h1 {
 }
 
 .hero {
-    position: absolute;
+    position: relative;
     top: 0;
     background-image: url("images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     scale: 1;
-    height: 100%;
+    height: 700px;
     width: 100%;
 
 }
@@ -111,13 +112,11 @@ h1 {
     list-style: none;
 }
 
-
 .nav-items a {
     font-weight: 550;
     text-transform: uppercase;
     font-size: 15px;
 }
-
 
 .banner {
 
@@ -176,7 +175,6 @@ h1 {
 .banner-text p {
 
     line-height: 1.6;
-
     opacity: 1;
     font-size: 19px;
     font-weight: lighter;
@@ -189,26 +187,52 @@ h1 {
     display: flex;
 }
 
-
-
 .banner-text #download-button {
 
 
     margin-right: .75em;
-    color: #fea44c !important;
+    color: #fea44c;
     background: 0 0;
-
-
     box-shadow: inset 0 0 0 .15em #FEA44C, 0 2px 20px #563719;
     text-shadow: 0 2px 5px #563719;
+
+    transition: transform .7s ease;
+
 }
 
 
-.banner-text #documentation-link {
+.banner-text #download-button:hover {
+    color: #eeeeec;
+    background-color: #fea44c;
+    /* transform: translateY(6px); */
+    transform: scale(.95);
+    /* transform-origin: bottom center; */
+    box-shadow: 0 0 40px #ff8409;
 
+    text-shadow: 0 2px 5px #ff1515;
+
+}
+
+
+
+
+
+
+.banner-text #documentation-link {
+    color: #eeeeec;
     margin-left: .75em;
     text-shadow: 0 2px 5px rgba(0, 0, 0, .25);
-    box-shadow: inset 0 -.43em rgba(0, 0, 0, .2), 0 2px 20px #1b51ad;
+    box-shadow: inset 0 -.43em rgba(0, 0, 0, .2);
+    transition: transform .7s ease;
+}
+
+.banner-text #documentation-link:hover {
+
+    transform: translateY(1.5px);
+    transform: scale(.95);
+    box-shadow: inset 0 -.29em rgba(0, 0, 0, .2), 0 0 40px #0657e4;
+    text-shadow: 0 2px 5px #682118;
+
 }
 
 .banner-text .btn {
@@ -241,17 +265,15 @@ h1 {
     background-color: rgb(54, 123, 240);
 }
 
-
 .banner-text .btn i {
     margin: 0 5px;
     text-shadow: .5px .5px .25px, -.5px -.5px .25px, .5px -.5px .25px,
         -.5px .5px .25px, 0 4px 3px rgba(0, 0, 0, .5);
 }
 
-
 #down-arrow {
 
-    position: absolute;
+    position: relative;
     bottom: 50px;
     right: 50%;
     animation: bounce 1s cubic-bezier(.5, .05, 1, .5) infinite alternate;
@@ -282,17 +304,11 @@ h1 {
 }
 
 
-
-/* KALI HIGH LIGHTS
- */
-
-
-
+/* KALI HIGHLIGHTS*/
 #kali-highlights {
     color: #fff;
     background-color: #000;
-    position: absolute;
-    top: 100%;
+    position: relative;
     width: 100%;
     height: 270%;
     padding-top: 120px;
@@ -308,14 +324,18 @@ h1 {
     font-size: 45px;
     font-weight: 700;
 
+    /* apply a background that is gradient of two colors */
     background-image: linear-gradient(159deg, rgb(12, 12, 243), rgb(216, 35, 216));
+    /* for chrome */
     -webkit-background-clip: text;
+    /* for other browsers */
     background-clip: text;
+    /* transparent text only the background
+    image is visible which is a color gradient, due 
+    to the above tow lines */
     -webkit-text-fill-color: transparent;
 
 }
-
-
 
 #kali-highlights h3 {
     max-width: 700px;
@@ -341,9 +361,6 @@ ul {
 
 }
 
-
-
-
 #kali-highlights li {
     width: 370px;
     line-height: 1.8;
@@ -367,8 +384,6 @@ ul {
 
 }
 
-
-
 #kali-highlights figure {
     position: relative;
     max-width: 1340px;
@@ -384,28 +399,28 @@ img {
 }
 
 #kali-highlights figure img:first-child {
+
     width: 107%;
     margin-top: -2.5%;
     margin-left: -3.5%;
     height: auto;
+    display: block;
 }
 
 #kali-highlights figure img:last-child {
     position: absolute;
     width: 84%;
     left: 8%;
+    top: 6%;
     border-radius: 4px;
-    top: 2%;
+    z-index: 34;
+
 }
 
-
 /* section two for the kali tools start here  */
-
-
 #kali-tools {
-    position: absolute;
+    position: relative;
     background-color: #16171d;
-    top: 370%;
     width: 100%;
 }
 
@@ -475,7 +490,7 @@ section>p {
 #kali-tools>div::after {
     content: '';
     display: block;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 40px;
     top: 0;
@@ -500,7 +515,8 @@ section>p {
     display: flex;
     animation: scroll-left 50s ease infinite;
     will-change: transform;
-    width: max-content; /* Make container as wide as all items */
+    width: max-content;
+    /* Make container as wide as all items */
 }
 
 /* Keyframes for continuous left scroll */
@@ -508,43 +524,77 @@ section>p {
     0% {
         transform: translateX(0);
     }
+
     5% {
-        transform: translateX(-3%); 
+        transform: translateX(-3%);
     }
+
     10% {
-        transform: translateX(-4%); 
-    }15% {
-        transform: translateX(-6%); 
-    }20%{
-        transform: translateX(-8%); 
-    }25% {
-        transform: translateX(-10%); 
-    }30% {
-        transform: translateX(-12%); 
-    }35% {
-        transform: translateX(-14%); 
-    }40% {
-        transform: translateX(-16%); 
-    }45% {
-        transform: translateX(-18%); 
-    }50% {
-        transform: translateX(-20%); 
-    }55% {
-        transform: translateX(-22%); 
-    }60% {
-        transform: translateX(-24%); 
-    }70% {
-        transform: translateX(-26%); 
-    }75% {
-        transform: translateX(-28%); 
-    }80% {
-        transform: translateX(-30%); 
-    }85% {
-        transform: translateX(-32%); 
-    }90% {
-        transform: translateX(-34%); 
-    }100% {
-        transform: translateX(-36%); 
+        transform: translateX(-4%);
+    }
+
+    15% {
+        transform: translateX(-6%);
+    }
+
+    20% {
+        transform: translateX(-8%);
+    }
+
+    25% {
+        transform: translateX(-10%);
+    }
+
+    30% {
+        transform: translateX(-12%);
+    }
+
+    35% {
+        transform: translateX(-14%);
+    }
+
+    40% {
+        transform: translateX(-16%);
+    }
+
+    45% {
+        transform: translateX(-18%);
+    }
+
+    50% {
+        transform: translateX(-20%);
+    }
+
+    55% {
+        transform: translateX(-22%);
+    }
+
+    60% {
+        transform: translateX(-24%);
+    }
+
+    70% {
+        transform: translateX(-26%);
+    }
+
+    75% {
+        transform: translateX(-28%);
+    }
+
+    80% {
+        transform: translateX(-30%);
+    }
+
+    85% {
+        transform: translateX(-32%);
+    }
+
+    90% {
+        transform: translateX(-34%);
+    }
+
+    100% {
+        transform: translateX(-36%);
     }
 }
 
@@ -564,15 +614,214 @@ section>p {
     height: 67%;
     width: 67%;
     margin-bottom: 15px;
-    transform-origin:bottom center;
-    transition: transform 0.5s ease; 
+    transform-origin: bottom center;
+    transition: transform 0.5s ease;
 }
 
 #kali-tools>div a>img:hover {
     transform: scale(1.2);
-  
+
 }
 
 #kali-tools div {
     color: #eeeeec;
+}
+
+
+/* kali linux, overview of it is most videly supported on systems section  */
+
+
+/* total section */
+
+#kali-everywhere {
+    position: relative;
+    background: url('images/neon-background.svg');
+    color: #eeeeec;
+    background-color: #010409;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+}
+
+/* section heading */
+#kali-everywhere>h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+
+    /* apply a background that is gradient of two colors */
+    background-image: linear-gradient(159deg, rgb(12, 12, 243), rgb(216, 35, 216));
+    /* for chrome */
+    -webkit-background-clip: text;
+    /* for other browsers */
+    background-clip: text;
+    /* transparent text only the background
+    image is visible which is a color gradient, due 
+    to the above tow lines */
+    -webkit-text-fill-color: transparent;
+}
+
+/* #kali-everwhere>div{
+
+} */
+
+/* list of items that mention how you can use kali */
+#kali-everywhere ul {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+    align-items: start;
+}
+
+/* individual items properties */
+#kali-everywhere ul li {
+    width: 300px;
+    margin: 10px;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* links color and other properties */
+#kali-everywhere ul a {
+    display: flex;
+    align-items: center;
+
+
+}
+
+/* each item has a logo type pic attached */
+#kali-everywhere ul img {
+    width: 160px;
+    float: left;
+    margin-left: -34px;
+    vertical-align: middle;
+    border: 0;
+}
+
+/* and have a heading */
+#kali-everywhere ul h3 {
+    color: #eeeeec;
+    font-size: 21px;
+    font-weight: 700;
+    width: 100px;
+    float: right;
+
+}
+
+/* description */
+#kali-everywhere ul div {
+    text-align: justify;
+    clear: both;
+}
+
+
+
+
+/* Desktop preview. Kali's desktop options Xfce is default but you can choose 
+GNOME or KDE
+i am using GNOME */
+
+
+/* total section */
+#desktop-preview {
+    background-color: #16171d;
+}
+
+/* heading */
+#desktop-preview>h1 {
+    font-weight: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    line-height: normal;
+    font-size: 45px;
+    font-weight: 700;
+
+    /* apply a background that is gradient of two colors */
+    background-image: linear-gradient(159deg, rgb(12, 12, 243), rgb(216, 35, 216));
+    /* for chrome */
+    -webkit-background-clip: text;
+    /* for other browsers */
+    background-clip: text;
+    /* transparent text only the background
+    image is visible which is a color gradient, due 
+    to the above tow lines */
+    -webkit-text-fill-color: transparent;
+}
+
+/* total space exculding the heading */
+#desktop-preview>div {
+    display: flex;
+    justify-content: center;
+
+    margin: 60px auto;
+    max-width: 1120;
+}
+
+/* 
+#desktop-preview>div:nth-last-of-type(2){
+   justify-content: flex-end;
+} */
+
+#desktop-preview>div:nth-last-of-type(2)>img {
+    margin-right: 60px;
+    margin-left: 0;
+}
+
+
+/* section for each desktop destro */
+#desktop-preview>div>div {
+    width: 400px;
+    flex-shrink: 0;
+
+}
+
+/* contains name and logo of each desktop */
+#desktop-preview h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+/* paragraph which describe the desktop enviroment */
+#desktop-preview p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #eeeeec;
+
+}
+
+
+/* logo */
+#desktop-preview h3>img {
+    display: inline-block;
+    height: 1.77em;
+    margin: .16em;
+    margin-right: .4em;
+    vertical-align: -.6em;
+    border-radius: 999px;
+    box-shadow: 0 1 5px rgba(0, 0, 0, 0.2);
+
+
+}
+
+/* desktop picture */
+#desktop-preview div>img {
+    height: 370px;
+    vertical-align: middle;
+    align-self: flex-start;
+    margin-left: 60px;
+    border-radius: 6px;
+
+    box-shadow: 0 10px 50px rgba(0, 0, 0, .4);
 }
