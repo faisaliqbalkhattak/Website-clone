@@ -359,7 +359,7 @@ h1 {
     bottom: 10%;
     right: 50%;
     animation: bounce 1s cubic-bezier(.5, .05, 1, .5) infinite alternate;
-    transform-origin: right bottom;
+    transform-origin: right bottom cxz;
 }
 
 #down-arrow div {
@@ -1037,7 +1037,7 @@ section>p {
     position: absolute;
     transform: scale(.98) !important;
     transform: translate(-50%, -50%);
-    animation: nethunter2 15s steps(1) infinite;
+    animation: nethunter2 9s steps(1) infinite;
 }
 
 #nethunter-demo-3 {
@@ -1045,7 +1045,7 @@ section>p {
     position: absolute;
     transform: scale(.98) !important;
     transform: translate(-50%, -50%);
-    animation: nethunter3 15s steps(1) infinite;
+    animation: nethunter3 9s steps(1) infinite;
 }
 
 @keyframes nethunter2 {
@@ -1387,3 +1387,477 @@ footer .container div:last-child {
     max-width: 80%;
     display: block;
 }
+
+/* 
+
+/*Media Queries for Responsiveness 
+Large screens (>1200px) 
+
+
+
+
+
+@media (min-width: 1201px) {
+    .nav-items {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .nav-bar {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .nav-items {
+        width: 600px;
+        justify-content: space-between;
+    }
+
+    .nav-items a {
+        font-size: 14px;
+    }
+
+    .banner {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .banner-logo {
+        width: 400px;
+        height: 400px;
+    }
+
+    .banner-text {
+        width: 450px;
+        margin-right: 50px;
+    }
+
+    #kali-highlights ul {
+        max-width: 900px;
+    }
+
+    #kali-highlights li {
+        width: 300px;
+    }
+
+    #kali-highlights figure {
+        max-width: 1000px;
+    }
+
+    #kali-tools>div {
+        max-width: 900px;
+    }
+
+    #kali-tools>div a {
+        max-width: 150px;
+    }
+
+    #kali-everywhere>div {
+        max-width: 1000px;
+    }
+
+    #kali-everywhere>div>div {
+        width: calc(50% - 20px);
+    }
+
+    #kali-everywhere figure {
+        width: calc(50% - 20px);
+        height: calc((50% - 20px)*.6);
+    }
+
+    #kali-everywhere ul {
+        max-width: 900px;
+    }
+
+    #kali-everywhere ul li {
+        width: 250px;
+    }
+
+    #desktop-preview>div {
+        max-width: 900px;
+    }
+
+    #desktop-preview>div>div {
+        width: 350px;
+    }
+
+    #desktop-preview div>img {
+        height: 300px;
+        margin-left: 30px;
+    }
+
+    footer .container {
+        max-width: 800px;
+    }
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        margin: 20px auto;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-logo img {
+        width: 80px;
+    }
+
+    .nav-items {
+        position: static;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+    }
+
+    .nav-items a {
+        font-size: 16px;
+    }
+
+    .banner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        padding: 80px 0;
+    }
+
+    .banner-logo {
+        margin: auto;
+        width: 75vw;
+        height: 50vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 350px;
+        max-width: 528px;
+    }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #eeeeec;
+        padding-top: 0;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .banner-text-M {
+        display: block;
+        text-align: center;
+    }
+
+    .banner-text-D {
+        display: none;
+    }
+
+    .banner-text h1 {
+        line-height: 1.2;
+        text-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 56px;
+        font-weight: 700;
+    }
+
+    .banner-text p {
+        font-size: 24px;
+    }
+
+    .banner-text>div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #kali-highlights {
+        padding: 80px 20px;
+    }
+
+    #kali-highlights h1 {
+        font-size: 36px;
+    }
+
+    #kali-highlights h3 {
+        font-size: 22px;
+        max-width: 80%;
+    }
+
+    #kali-highlights ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #kali-highlights li {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #kali-highlights figure {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    #kali-highlights figure img:first-child {
+        width: 100%;
+        margin: 0;
+    }
+
+    #kali-highlights figure img:last-child {
+        width: 80%;
+        left: 10%;
+    }
+
+    #kali-tools {
+        padding: 80px 20px;
+    }
+
+    #kali-tools h2 {
+        font-size: 28px;
+    }
+
+    #kali-tools p {
+        font-size: 18px;
+    }
+
+    #kali-tools h4 {
+        font-size: 18px;
+    }
+
+    #kali-tools>div a {
+        width: 25vw;
+        min-width: 100px;
+    }
+
+    #kali-everywhere {
+        padding: 80px 20px;
+    }
+
+    #kali-everywhere h1 {
+        font-size: 36px;
+    }
+
+    #kali-everywhere>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #kali-everywhere>div>div {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    #kali-everywhere figure {
+        width: 80%;
+        height: auto;
+        aspect-ratio: 5/3;
+    }
+
+    #kali-everywhere ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #kali-everywhere ul li {
+        width: 80%;
+    }
+
+    #kali-everywhere ul img {
+        width: 120px;
+        margin-left: -20px;
+    }
+
+    #kali-everywhere ul h3 {
+        font-size: 18px;
+    }
+
+    #desktop-preview {
+        padding: 80px 20px;
+    }
+
+    #desktop-preview h1 {
+        font-size: 36px;
+    }
+
+    #desktop-preview>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #desktop-preview>div>div {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    #desktop-preview div>img {
+        height: 250px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .container div {
+        width: 80%;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    footer .container div:last-child {
+        margin: 30px auto;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .nav-logo img {
+        width: 60px;
+    }
+
+    .nav-items a {
+        font-size: 14px;
+    }
+
+    .banner-logo {
+        width: 90vw;
+        height: 60vw;
+        max-height: 300px;
+    }
+
+    .banner-text h1 {
+        font-size: 40px;
+    }
+
+    .banner-text p {
+        font-size: 20px;
+    }
+
+    .banner-text .btn {
+        width: 160px;
+        padding: 1em .5em;
+        font-size: 12px;
+    }
+
+    #down-arrow {
+        bottom: 5%;
+    }
+
+    #kali-highlights h1 {
+        font-size: 28px;
+    }
+
+    #kali-highlights h3 {
+        font-size: 18px;
+    }
+
+    #kali-highlights li {
+        width: 90%;
+    }
+
+    #kali-highlights figure {
+        width: 90%;
+    }
+
+    #kali-tools h2 {
+        font-size: 24px;
+    }
+
+    #kali-tools p {
+        font-size: 16px;
+    }
+
+    #kali-tools h4 {
+        font-size: 16px;
+    }
+
+    #kali-tools>div a {
+        width: 30vw;
+        min-width: 80px;
+        font-size: 14px;
+    }
+
+    #kali-everywhere h1 {
+        font-size: 28px;
+    }
+
+    #kali-everywhere p {
+        font-size: 14px;
+    }
+
+    #kali-everywhere ul li {
+        width: 90%;
+    }
+
+    #kali-everywhere ul img {
+        width: 100px;
+    }
+
+    #desktop-preview h1 {
+        font-size: 28px;
+    }
+
+    #desktop-preview p {
+        font-size: 14px;
+    }
+
+    #desktop-preview div>img {
+        height: 200px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer h4 {
+        font-size: 16px;
+    }
+
+    #footer-logo {
+        max-width: 60%;
+    }
+} */
