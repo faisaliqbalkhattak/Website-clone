@@ -750,9 +750,90 @@ section>p {
     -webkit-text-fill-color: transparent;
 }
 
-/* #kali-everwhere>div{
+#kali-everywhere>div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1386px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
 
-} */
+}
+
+#kali-everywhere>div>div {
+    width: calc(33.33vw - 32px);
+}
+
+#kali-everywhere figure {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(33.33vw - 32px);
+    height: calc((33.33vw - 32px)*.6);
+    filter: none;
+
+}
+
+#kali-everywhere>div>div:nth-last-of-type(2) figure {
+    width: calc((33.33vw - 32px)*0.6);
+    height: calc((33.33vw - 32px)*1.5);
+
+}
+
+
+
+
+#kali-everywhere h5 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#kali-everywhere p {
+    font-size: 16px;
+    max-width: 360px;
+    margin: auto;
+    line-height: 1.8;
+
+}
+
+#undercover-demo {
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+#nethunter-demo {
+    margin-top: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+
+#nethunter-demo img {
+    border-bottom-right-radius: 8.9%;
+    border-top-right-radius: 8.9%;
+
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 7.1%;
+}
+
+
+#win-kex-demo {
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+
+}
+
 
 /* list of items that mention how you can use kali */
 #kali-everywhere ul {
@@ -760,7 +841,7 @@ section>p {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 100px auto auto;
     justify-content: center;
     flex-direction: row;
     align-items: start;
@@ -942,7 +1023,7 @@ footer .container {
     margin-right: auto;
 }
 
-footer .container div{
+footer .container div {
     flex: unset;
     width: 200px;
     margin: 0 auto;
@@ -952,7 +1033,7 @@ footer .container div{
 
 }
 
-footer h4{
+footer h4 {
     margin: 1.2em 0;
     font-size: 20px;
     font-weight: 700;
@@ -961,27 +1042,26 @@ footer h4{
 
 }
 
-footer a{
+footer a {
     display: block;
     color: #fff;
     text-decoration: none;
 
 }
 
-footer a svg{
+footer a svg {
     height: 20px;
     margin-right: 10px;
     vertical-align: sub;
 
 }
 
-footer .container div:last-child
-{
+footer .container div:last-child {
     width: 100%;
     margin: 60px auto;
 }
 
-#footer-logo{
-max-width: 80%;
+#footer-logo {
+    max-width: 80%;
     display: block;
 }
