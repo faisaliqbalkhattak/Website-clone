@@ -825,6 +825,12 @@ section>p {
     border-bottom-left-radius: 7.1%;
 }
 
+#nethunter-demo-2{
+    display: none;
+}
+#nethunter-demo-3{
+    display: none;
+}
 
 #win-kex-demo {
     border-radius: 3px;
