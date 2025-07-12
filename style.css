@@ -355,8 +355,8 @@ h1 {
 }
 
 #down-arrow {
-    position: relative;
-    bottom: 50px;
+    position: absolute;
+    bottom: 10%;
     right: 50%;
     animation: bounce 1s cubic-bezier(.5, .05, 1, .5) infinite alternate;
     transform-origin: right bottom;
@@ -798,7 +798,7 @@ section>p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    animation: undercover1 15s steps(1) infinite;
+    animation: undercover1 10s steps(1) infinite;
 }
 
 #undercover-demo-2 {
@@ -810,7 +810,7 @@ section>p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    animation: undercover2 15s steps(1) infinite;
+    animation: undercover2 10s steps(1) infinite;
 }
 
 #undercover-demo-3 {
@@ -822,7 +822,7 @@ section>p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    animation: undercover3 15s steps(1) infinite;
+    animation: undercover3 10s steps(1) infinite;
 }
 
 #undercover-demo-4 {
@@ -833,7 +833,7 @@ section>p {
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    animation: undercover4 15s steps(1) infinite;
+    animation: undercover4 10s steps(1) infinite;
 }
 
 #undercover-demo-5 {
@@ -846,7 +846,7 @@ section>p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    animation: undercover5 15s steps(1) infinite;
+    animation: undercover5 10s steps(1) infinite;
 }
 
 #undercover-demo-6 {
@@ -859,7 +859,7 @@ section>p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    animation: undercover6 15s steps(1) infinite;
+    animation: undercover6 10s steps(1) infinite;
 }
 
 #undercover-demo-7 {
@@ -871,7 +871,7 @@ section>p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    animation: undercover7 15s steps(1) infinite;
+    animation: undercover7 10s steps(1) infinite;
 }
 
 #undercover-demo-8 {
@@ -883,7 +883,7 @@ section>p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    animation: undercover8 15s steps(1) infinite;
+    animation: undercover8 10s steps(1) infinite;
 }
 
 @keyframes undercover1 {
@@ -958,13 +958,8 @@ section>p {
     }
 
     40%,
-    75% {
-        opacity: 1;
-    }
-
-    75%,
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 
 }
@@ -977,14 +972,10 @@ section>p {
     }
 
     45%,
-    75% {
+    100% {
         opacity: 1;
     }
 
-    75%,
-    100% {
-        opacity: 0;
-    }
 }
 
 @keyframes undercover7 {
