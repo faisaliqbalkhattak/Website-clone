@@ -1432,8 +1432,7 @@ Large screens (>1200px) */
     }
 
     .banner-text>div:last-child {
-        flex-shrink: 1;
-        flex-grow: 1;
+        max-width: 350px;
     }
 
 
