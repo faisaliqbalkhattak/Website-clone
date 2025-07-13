@@ -1437,8 +1437,17 @@ Large screens (>1200px) */
         margin-right: auto;
     }
 
-    .banner-text>div:last-child {
-        max-width: 90%;
+    .banner-text>div>a {
+        transform: scale(.8);
+
+    }
+
+    .banner-text #documentation-link {
+        margin-left: 0;
+    }
+
+    .banner-text #download-button {
+        margin-right: 0;
     }
 
 
