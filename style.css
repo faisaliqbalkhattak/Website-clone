@@ -1324,6 +1324,7 @@ Large screens (>1200px) */
     .nav-bar {
         display: none;
     }
+
     .banner {
         margin: auto;
     }
@@ -1429,6 +1430,13 @@ Large screens (>1200px) */
         margin-left: auto;
         margin-right: auto;
     }
+
+    .banner-text>div:last-child {
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+
 
     #down-arrow {
         position: absolute;
