@@ -1437,6 +1437,15 @@ Large screens (>1200px) */
         margin-right: auto;
     }
 
+.banner-text>div:last-child {
+    justify-content: center;
+    }
+
+
+
+
+
+
     .banner-text>div>a:last-child {
         transform: scale(.8);
         max-width: 45%;
