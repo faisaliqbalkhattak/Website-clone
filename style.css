@@ -1437,17 +1437,24 @@ Large screens (>1200px) */
         margin-right: auto;
     }
 
-    .banner-text>div>a {
-        transform: scale(.7);
+    .banner-text>div>a:last-child {
+        transform: scale(.8);
+        max-width: 45%;
+        transform-origin: left;
+    }
 
+     .banner-text>div>a:first-child {
+        transform: scale(.8);
+        max-width: 45%;
+        transform-origin: right;
     }
 
     .banner-text #documentation-link {
-        margin-left: 0;
+        margin-left: .7em;
     }
 
     .banner-text #download-button {
-        margin-right: 0;
+        margin-right: .7em;
     }
 
 
