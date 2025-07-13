@@ -1332,6 +1332,12 @@ Large screens (>1200px) */
 }
 
 
+@media (max-width: 370px) {
+
+  .banner-text>div:last-child {
+        max-width: 280px;
+    }
+}
 
 @media (max-width: 900px) {
 
@@ -1432,7 +1438,7 @@ Large screens (>1200px) */
     }
 
     .banner-text>div:last-child {
-        max-width: 350px;
+        max-width: 450px;
     }
 
 
