@@ -3,13 +3,13 @@
 This project is a **clone of the Kali Linux official website's home page**, www.kali.org built using **HTML and CSS only**.  
 the clone has all the **responsiveness properties** and **animations preserved**
 
-## o P roject Structure
+## o 🗀 P roject Structure
 
 ```
 .
 ├── images/          # All website images
 ├── index.html       # Main HTML file (home page)
-└── style.css        # CSS styles for the home page
+└── style.css        # CSS styles for the home page  
 ```
 
 ## o How to Run
